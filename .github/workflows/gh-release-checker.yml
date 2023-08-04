@@ -45,7 +45,7 @@ jobs:
           fi
         working-directory: ${{ github.repository }}
         env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Check for upstream release and pull if available
         shell: pwsh
